@@ -8,7 +8,8 @@ body {
     height: 400px;
     color: azure;
     box-shadow: rgb(116, 116, 116) 0 0 5px;
-    transition: .5s ease-in;
+    transition: 12s;
+    transform: scale3d(-1, 1, -1);
 }
 
 .card-title {
@@ -16,10 +17,10 @@ body {
 }
 
 .card:hover {
-    transition: .5s ease-in;
-    transform: skew(5deg)scale3d(0.5, 1, 7);
+    transition: 1s step-start;
     position: relative;
     z-index: 155;
+    transform: scale3d(1, 1, 1);
 }
 
 .bg-success1 {
@@ -83,7 +84,6 @@ body {
     }
     110% {
         width: 110%;
-        transition: 6s ease-in;
     }
 }
 
@@ -123,7 +123,6 @@ body {
     }
     110% {
         width: 0%;
-        transition: 6s ease-in ease-out;
     }
 }
 
